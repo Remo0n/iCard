@@ -96,6 +96,21 @@ $(document).ready(function(){
         loop:true,
         dotsEach:true,
         autoplay:true,
+        responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          800:{
+              items:2,
+              nav:false
+          },
+          1000:{
+              items:3,
+              nav:true,
+              loop:false
+          }
+      }
     });
   });
 /* owl carousel plugin triger --end */
@@ -155,9 +170,9 @@ $("a[href='#contact']").click(function(){
 $("a").click(function(){
     $(this).parent().siblings().children().css("color","#828282 ")
     $(this).css("color","#5658DB")
-    var aHref = $(this).attr("href");
+    /* var aHref = $(this).attr("href");
     var d = $(aHref).offset().top;
-    $("body, html").animate({scrollTop:d}, 1000)
+    $("body, html").animate({scrollTop:d}, 1000) */
 })
 
 new WOW().init({

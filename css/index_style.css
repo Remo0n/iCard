@@ -370,3 +370,50 @@ header{
 
  }
 /* back to top button --end */
+@media screen and (max-width: 800px)  {
+    .home-caption{
+        top: 25%;
+    }
+    .home-caption h1 {
+        font-size: 3rem;
+    }
+    .service-describtion div div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .service-describtion div i {
+        margin: unset !important;
+    }
+    .service img {
+        height: unset;
+        width: unset;
+        margin-left: unset;
+        margin-bottom: 50px;
+    }
+    .icons{
+        height: unset;
+        padding: 10px;
+    }
+    .about-caption, .portfolio h6{
+        width: 100%;
+    }
+    .records{
+        height: unset;
+        background-position-x: right;
+        display: flex;
+    }
+    .record {
+        margin: 0;
+        padding: 12px;
+    }
+    .testimonials {
+        margin: 0;
+    }
+    .testimonials h1{
+        margin: 0;
+        padding: 15px !important;
+    }
+}
